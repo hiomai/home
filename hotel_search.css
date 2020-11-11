@@ -1,0 +1,421 @@
+.health_grid_mb {
+    display: grid;
+}
+
+.hs_box {
+    display: grid;
+    grid-column-gap: 15px;
+    align-content: flex-end;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+
+.hs-input-field {
+    text-align: center;
+    height: 40px;
+    background-color: #000000;
+    color: #f4984d;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #353333;
+    width: 100%;
+}
+
+.hs_button {
+    transition-duration: 250ms;
+    height: 40px;
+    background-color: #a25b00;
+    color: #ffffff;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    text-align: center;
+    text-align-last: center;
+
+    /* webkit*/
+}
+
+option {
+    text-align: center;
+
+    /* reset to left*/
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+.hs-result-grid {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-column-gap: 20px;
+    background-color: #f8f8f8;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible-ptv {
+    cursor: pointer;
+    padding: 0px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 13px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible-ptv:hover {
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content_collapse {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.collapsible-ptv:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 3px;
+    border-left-style: solid;
+    font-family: Fira Sans Condensed;
+    margin-top: -4px;
+}
+
+.collapsible-ptv.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+@media (min-width:768px) {
+    .hs_box_dp {
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+@media (max-width:767px) {
+    .hs_box-mb {
+        grid-template-columns: auto auto;
+        grid-row-gap: 10px;
+        padding-bottom: 2px;
+    }
+}
+
+.hs-search-grid-dp {
+    background-color: #010101;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:767px) {
+    .hs-search-grid-mb {
+        grid-template-columns: auto;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width:767px) {
+    .hs-result-grid-mb {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}
+
+@media (max-width:767px) {
+    .hs-room-title-mb {
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+
+@media (min-width:768px) {
+    .hs-detail-grid-dp {
+        grid-template-columns: auto auto;
+        grid-column-gap: 10px;
+    }
+}
+
+@media (max-width:767px) {
+    .hs-detail-grid-mb {
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 8px;
+    }
+}
+
+.hs-result-room-icons {
+    display: flex;
+    align-items: center;
+    background-color: #ececec;
+    padding: 10px;
+    justify-content: center;
+}
+
+@media (min-width:768px) {
+    .hs-result-main {
+        grid-template-columns: auto 380px;
+        width: 100%;
+        grid-column-gap: 15px;
+    }
+}
+
+@media (max-width:767px) {
+    .hs-result-main-mb {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+.hs-count-and-price {
+    display: grid;
+    grid-template-columns: auto 160px;
+    grid-column-gap: 10px;
+}
+
+@media (max-width:767px) {
+    .hs-count-and-price-mb {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width:767px) {
+    .mb-text-middle {
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 7px;
+    }
+}
+
+@media (min-width:768px) {
+    .hs-persons-and-pp {
+        display: grid;
+        justify-content: flex-end;
+        grid-template-columns: auto auto;
+        align-content: flex-end;
+        height: 60px;
+        width: 100%;
+    }
+}
+
+@media (max-width:767px) {
+    .hs-persons-and-pp-mb {
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto;
+        padding-top: 20px;
+        padding-bottom: 2px;
+    }
+}
+
+@media (min-width:768px) {
+    .hs-bage-div-dp {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+}
+
+.hs_button:hover {
+    transition-duration: 250ms;
+    background-color: #f99731;
+}
+
+.hs_button:active {
+    background-color: #fdc388;
+}
+
+.food-tip {
+    display: grid;
+    grid-template-columns: 25px auto auto;
+    justify-content: flex-start;
+    grid-column-gap: 5px;
+    align-items: center;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.food-tip:active {
+    border: 0px solid;
+    border-radius: 0px;
+}
+
+.inc_click {
+    border-bottom: 1px dashed #d8b2b2;
+}
+
+.inc_click:hover {
+    cursor: pointer;
+    color: #f99731;
+}
+
+.hs-extra-list {
+    display: grid;
+    grid-template-columns: 25px auto;
+    justify-content: flex-start;
+    grid-column-gap: 5px;
+    align-items: flex-start;
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+.hs-icon-extrass {
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #d47c08;
+    margin-top: -2px;
+}
+
+.hs_promo_search {
+    background-image: url("fasad.jpg");
+    display: grid;
+}
+
+.hs-bage {
+    background-color: #f99731;
+    color: #ffffff;
+    padding: 3px 15px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hs-room-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.hs-room-title:hover {
+    cursor: pointer;
+    color: #f99731;
+}
+
+.hs-arrow {
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    margin-top: -2px;
+    height: 20px;
+}
+
+@media (max-width:767px) {
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
